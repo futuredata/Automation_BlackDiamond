@@ -4,7 +4,7 @@ import java.io.File;
 
 public class GlobalConstants {
     public static final String MP_HK_DEV_PAGE_URL = "http://192.168.100.123:8081/";
-    public static final String MP_VN_DEV_PAGE_URL = "http://192.168.1.164:8081/";
+    public static final String MP_VN_DEV_PAGE_URL = "https://blackdiamond.mozox.com/";
 
     public static final int LONG_TIMEOUT = 40;
     public static final int SHORT_TIMEOUT = 10;

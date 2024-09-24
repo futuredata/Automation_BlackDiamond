@@ -1,7 +1,7 @@
 package interfaces.pageUI;
 
 public class DashboardPageUI {
-    public static final String PLAY_BUTTON = "//div[@class='playDashboard']/i[@class='fa-solid fa-play']";
+    public static final String PLAY_BUTTON = "//div[@class='playDashboard']/i[@class='fa fa-play']";
     public static final String WIDGET_LIST = "//div[@class='react-grid-item widgetContainer react-draggable cssTransforms react-resizable']/div[@class='widget']";
     public static final String UNLOCK_EDIT_BUTTON = "//button[text()='Unlock / Edit']";
     public static final String GO_TO_DASHBOARD_LIST_BUTTON = "//span[text()='Go To Dashboard List']/parent::button";

@@ -115,9 +115,9 @@ public class BaseTest {
     private String getEnvironment(String envName) {
         String url = null;
         if (envName.equalsIgnoreCase("HKDev")) {
-            url = "http://192.168.100.123:8081/";
+            url = GlobalConstants.MP_HK_DEV_PAGE_URL;
         } else if (envName.equalsIgnoreCase("VNDev")) {
-            url = "http://192.168.1.164:8081/";
+            url = GlobalConstants.MP_HK_DEV_PAGE_URL;
         } else {
             throw new RuntimeException("Invalid environment name");
         }
