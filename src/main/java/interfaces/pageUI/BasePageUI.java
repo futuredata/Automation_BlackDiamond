@@ -3,7 +3,7 @@ package interfaces.pageUI;
 public class BasePageUI {
     public static final String SEARCH_MENU = "//a[@id='search-menu-dropdown']";
 
-    public static final String SEARCH_PAGE = "//a[@href='#/search']";
+    public static final String SEARCH_PAGE = "//ul[@role='menu']/li[@role='presentation']/a[contains(.,'Search')]";
     public static final String COLD_SEARCH_PAGE = "//a[@href='#/cold-search']";
 
     public static final String CORRELATION_MENU = "//div[@class='container-fluid']//span[text()='Correlation']";

@@ -534,8 +534,12 @@ public class BasePage {
     }
 
     public SearchPageObject gotoSearchPage(WebDriver driver) {
-        waitForElementClickable(driver, BasePageUI.SEARCH_MENU);
-        clickToElement(driver, BasePageUI.SEARCH_MENU);
+//        waitForElementClickable(driver, BasePageUI.SEARCH_MENU);
+//        clickToElement(driver, BasePageUI.SEARCH_MENU);
+        WebDriverWait explicitWait = new WebDriverWait(driver, Duration.ofSeconds(GlobalConstants.LONG_TIMEOUT));
+        explicitWait.until(ExpectedConditions.elementToBeClickable(By.linkText("Search")));
+        WebElement searchButtonByText = driver.findElement(By.linkText("Search"));
+        searchButtonByText.click();
 
         waitForElementClickable(driver, BasePageUI.SEARCH_PAGE);
         clickToElement(driver, BasePageUI.SEARCH_PAGE);
